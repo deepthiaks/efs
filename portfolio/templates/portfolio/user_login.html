@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login Page</title>
+</head>
+<body>
+<h1>HI</h1>
+
+ <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static "images/stocks.jpg" %}" alt="stocks"/>
+                                        <div class="caption">
+                                            <h2>Stock Portfolio</h2>
+                                            <p>Our Stock portfolios vary across industries.</p>
+                                            <p><a class="btn btn-primary" href="{% url 'portfolio:stock_list' %}"
+                                                  role="button">View
+                                                details &raquo;</a></p>
+                                        </div>
+                                    </div>
+</body>
+</html>

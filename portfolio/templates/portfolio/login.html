@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>EFS Login Page</title>
-</head>
-<body>
-<marquee>Welcome to EFS login Page</marquee>
-<form method="post" action="{% url 'login' %}">
+{% extends "portfolio/base.html" %}
+{% load staticfiles %}
+{% block content %}
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+<div class="col-md-3">
+    <div class="thumbnail">
+        <img src="{% static "images/login.jpg" %}" alt="Login"/>
+            <div class="caption">
+                <h2>Login</h2>
+                <p> Enter your credntials to login</p>
+            </div>
+    </div>
+</div>
+    <form method="post" action="{% url 'portfolio:login' %}">
         {% csrf_token %}
         <table>
             <tr>
@@ -22,5 +29,4 @@
         <input type="submit" value="login"/>
         <input type="hidden" name="next" value="{{ next }}"/>
     </form>
-</body>
-</html>
+{% endblock %}

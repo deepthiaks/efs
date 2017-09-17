@@ -5,6 +5,7 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^$', views.login, name='login'),
     url(r'^home/$', views.home, name='home'),
+    url(r'^accounts/profile/$', views.home, name='home'),
     url(r'^customer/$', views.customer_list, name='customer_list'),
     url(r'^customer/(?P<pk>\d+)/delete/$', views.customer_delete, name='customer_delete'),
     url(r'^customer/(?P<pk>\d+)/edit/$', views.customer_edit, name='customer_edit'),
