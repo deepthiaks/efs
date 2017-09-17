@@ -1,0 +1,35 @@
+body {
+    padding-left: 15px;
+    background-color: PaleGoldenRod;
+
+}
+
+.header1 h1 a {
+    color: #FCA205;
+    font-family: 'cursive';
+}
+
+
+
+.page-header h1, .page-header h1 a, .page-header h2, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #E13636;
+    font-size: 36pt;
+}
+.duv div{
+    background-color: lightblue;
+
+}
+
+tr.d0 td {
+  background-color: rgba(191, 63, 97, 0.6);
+  color: black;
+}
+tr.d1 td {
+  background-color: rgba(191, 63, 97, 0.6);
+  color: black;
+}
+
+thead.th {
+background-color:rgb(63, 191, 189);
+color:black;
+}
